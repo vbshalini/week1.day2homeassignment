@@ -1,0 +1,21 @@
+package week1.day2;
+
+public class ChangeOddIndexToUpperCase {
+
+	public static void main(String[] args) {
+		String test = "changeme";
+		char[] chtest1 = test.toCharArray();
+		int i = 0;
+		char ch1;
+		for (i = chtest1.length-1; i >= 0; i--) {
+			int a = i % 2;
+			if (a!=0) {
+				ch1 = (char) Character.toUpperCase(chtest1[i]);
+				System.out.print(ch1);
+			}else {
+				System.out.print(chtest1[i]);
+			}
+		}
+	}
+
+}
