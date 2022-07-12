@@ -1,0 +1,17 @@
+package week1.day2;
+
+public class RemoveDuplicates {
+
+	public static void main(String[] args) {
+		String text = "We learn java basics as part of java sessions in java week1";
+		String[] test = text.split(" ");
+		for (int i = 0; i < test.length; i++) {
+			for (int j = i+1; j < test.length; j++) {
+				if (test[i].equals(test[j])) {
+					test[i]="";
+				}
+			}System.out.print(test[i]);
+		}
+	}
+
+}
